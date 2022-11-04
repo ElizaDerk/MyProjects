@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 15px;
+    background: #6fc4e5;
+}
+
+form{
+    max-width: 640px;
+    margin: 0 auto;
+    background: aquamarine;
+    padding: 10px 15px;
+}
+
+.list-li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-first{
+    display: flex;
+    align-items: center;
+}
+
+.list-first p{
+    padding-left: 15px;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+li{
+    text-align: start;
+}
+
+.wrapper-input{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper-elements{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+input{
+    padding: 0 15px;
+    min-height: 30px;
+    border-radius: 4px;
+    border: 1px solid rgb(86, 86, 89);
+}
+
+button{
+    min-height: 30px;
+    margin:  0 5px;
+    cursor: pointer;
+}
+
+
+.ppp{
+    color: red;
+}
+.delete-icon{
+    border: none;
+    background: transparent;
+}
+
+.edit-icon{
+    border: none;
+    background: transparent;
+}
+
+.completed{
+
+}
+
+#select {
+    padding: 0 15px;
+    min-height: 30px;
+    border-radius: 4px;
+}
+
+.title-complated{
+    text-decoration: line-through;
+    opacity: 0.8;
+}

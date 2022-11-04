@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rozetka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <img src="https://xl-static.rozetka.com.ua/assets/img/design/logo_invert.svg" class="logo" alt="logo">
+    </header>
+    <div class="container">
+        <div class="main">
+            <h1 class="block-title">Оформление заказа</h1>
+            <div>
+                <fieldset name="userContact" class="first-block">
+                    <div class="checkInform">
+                        <div class="d-flex">
+                            <span class="span">1</span>
+                            <legend class="informTitle">Ваши контактные данные</legend>
+                        </div>
+                    </div>
+                    <form action="POST" id="rozetka">
+                        <div class="line-wrapper">
+                            <div class="line margin-right">
+                                <label for="inputSurname" class="input-label">Фамилия</label>
+                                <input type="text" name="surname" id="inputSurname" class="input" >
+                                <div id="error-1" class="error invisible">
+                                    <p>Введите фамилию на кириллице</p>
+                                    <img src="./img/attention.png" alt="attention">
+                                </div>
+                            </div>
+                            <div class="line">
+                                <label for="inputName" class="input-label">Имя</label>
+                                <input type="text" name="name" id="inputName" class="input">
+                                <div id="error-2" class="error invisible">
+                                    <p>Введите имя на кириллице</p>
+                                    <img src="./img/attention.png" alt="attention">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line-wrapper">
+                            <div class="line margin-right">
+                                <label for="inputTel" class="input-label">Мобильный телефон</label>
+                                <input type="tel" name="phone" id="inputTel" placeholder="+38" class="input">
+                                <div id="error-3" class="error invisible">
+                                    <p>Введите мобильный телефон</p>
+                                    <img src="./img/attention.png" alt="attention">
+                                </div>
+                            </div>
+                            <div class="line">
+                                <label class="input-label">Электронная почта</label>
+                                <input type="email" id="email" class="input" size="30">
+                            </div>
+                        </div>
+                    </form>
+                </fieldset>
+                <fieldset name="goodsDetails" class="second-block">
+                    <div class="second-wrapper">
+                        <h2 class="second-block-title">Заказ №1</h2>
+                        <p> на сумму:709₴</p>
+                    </div>
+                    <div class="s-wrapper">
+                        <div class="checkInform">
+                            <div class="inform d-flex">
+                                <span class="span">1</span>
+                                <legend class="informTitle">Товары продавца Rozetka</legend>
+                            </div>
+                            <a class="edit" href="#">
+                                <img src="./img/edit.png" alt="edit">
+                                Редактировать
+                            </a>
+                        </div>
+                        <div class="item-list">
+                            <ul>
+                                <li>
+                                    <div class="d-flex flex-row align-items-start">
+                                        <a href="#" class="product-link">
+                                           <figure class="d-flex flex-row">
+                                               <img src="img/4352559.jpg" alt="prod" width="56px" height="56px" style="margin-right: 10px">
+                                               <figcaption>
+                                                   Упаковка кофе в зернах Ferarra Caffe 100% Arabica с клапаном 1 кг х 2 шт (4820198877217)
+                                               </figcaption>
+                                           </figure>
+                                        </a>
+                                        <dl class="d-flex flex-row" style="width: 60%">
+                                            <div style="width: 33.33333%; text-align: center;">
+                                                <dt class="item-pr">Цена</dt>
+                                                <dd>709 ₴</dd>
+                                            </div>
+                                            <div style="width: 33.33333%; text-align: center;">
+                                                <dt class="item-pr">Количество</dt>
+                                                <dd>1</dd>
+                                            </div>
+                                            <div style="width: 33.33333%; text-align: center;">
+                                                <dt class="item-pr">Сумма</dt>
+                                                <dd>709 ₴</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset name="delivery" class="third-block">
+                    <div class="checkInform">
+                        <div class="inform d-flex">
+                            <span class="span">2</span>
+                            <legend class="informTitle">Доставка </legend>
+                        </div>
+                    </div>
+                    <div class="city-window">
+                        <div class="city-window-wrapper d-flex justify-content-between align-items-center flex-row">
+                            <div class="d-flex align-items-center">
+                                <div class="loc-img">
+                                    <img src="./img/location.png" alt="location">
+                                </div>
+                                <div id="dynamicCity">
+                                    <span class="input-label">Ваш город</span>
+                                    <p><span class="span-input">Харьков</span></p>
+                                    <span class="input-label">Харьковская область</span>
+                                </div>
+                            </div>
+                            <div class="button-modal">
+                                <button id="firstModal"><img src="./img/right.png" alt="right"></button>
+                            </div>
+
+                            <div id="textFirstModal" class="modal">
+                                <div class="modal-content">
+                                    <div class="d-flex justify-content-between modal-title">
+                                        <h2 style="font-size: 24px">Выберите свой город</h2>
+                                        <span class="close-button">&times;</span>
+                                    </div>
+                                    <div class="modal-wrapper">
+                                        <div class="d-flex align-items-center modal-item">
+                                            <img src="img/truck.png" alt="track">
+                                            <p style="font-size: 14px;color: #a6a5a5; margin-left: 5px;">Доставляем заказы по всей Украине!</p>
+                                        </div>
+                                        <div class="modal-wrapper-item">
+                                            <div class="btn-wrapper d-flex justify-content-between flex-wrap">
+                                                <button class="button modal-btn">Киев</button>
+                                                <button class="button modal-btn active">Харьков</button>
+                                                <button class="button modal-btn">Одесса</button>
+                                                <button class="button modal-btn">Днепр</button>
+                                                <button class="button modal-btn">Запорожье</button>
+                                                <button class="button modal-btn">Львов</button>
+                                            </div>
+                                            <div class="d-flex flex-column select-city">
+                                                <span class="input-label">Введите населенный пункт Украины</span>
+                                                <input type="text" name="userCity" id="userCity" class="city" placeholder="Выберите свой город">
+                                                <span id="example" class="input-label">Например, Котюжины</span>
+                                                <p id="error-4" class="error invisible">Город не найден. Проверьте написание.</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <a class="link-main" href="https://rozetka.com.ua/">Перейти на главную страницу</a>
+                                                <button id="modal-select" disabled>
+                                                    Применить
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <span class="input-label">Выбор города поможет предоставить актуальную информацию о наличии товара, его цены и способов доставки в вашем городе! Это поможет сохранить больше свободного времени для вас!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <label class="d-flex align-items-center">
+                            <input type="radio" class="input-wrapper" onclick="radioCheck()" name="radios" id="inputOne" value="">
+                            <div>
+                                <p>Самовывоз из наших магазинов</p>
+                                <span class="input-label">Забрать 29 июля с 14:00</span>
+                            </div>
+                            <p style="color: #00a046; margin-left: 400px;">Безплатно</p>
+                        </label>
+                        <div class="invisible" id="selectDiv1">
+                            <select name="address" id="select" class="address">
+                            </select>
+                            <div class="time-table d-flex justify-content-between">
+                                <div>
+                                    <p>Пн - Сб :</p>
+                                    <p>Вс :</p>
+                                </div>
+                                <div>
+                                    <p>10:00 - 19:00</p>
+                                    <p>10:00 - 18:00</p>
+                                </div>
+                                <div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.725476840877!2d36.31977531571367!3d49.960251979410764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270a51f40cb07d%3A0x3ed3259c01292800!2z0L_RgC4g0KHRgtCw0LTQuNC-0L3QvdGL0LksIDXQsCwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDkx!5e0!3m2!1sru!2sua!4v1659170784966!5m2!1sru!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="time-table-item">
+                                <span class="input-label">Выберите удобное для вас время доставки и мы сможем обработать ваш заказ быстрее</span>
+                                <div class="data d-flex justify-content-between align-items-center text-center">
+                                    <div class="data-list">
+                                        <p>2 августа</p><br>
+                                        <button class="button button-click active">14:00-19:00</button>
+                                    </div>
+                                    <div class="data-list">
+                                        <p>3 августа</p><br>
+                                        <button class="button button-click">14:00-19:00</button>
+                                    </div>
+                                    <div class="data-list">
+                                        <p>4 августа</p><br>
+                                        <button class="button button-click">14:00-19:00</button>
+                                    </div>
+                                    <div class="data-list">
+                                        <p>5 августа</p><br>
+                                        <button class="button button-click">14:00-19:00</button>
+                                    </div>
+                                    <div class="data-list">
+                                        <p>6 августа</p><br>
+                                        <button class="button button-click">14:00-19:00</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="radio">
+                        <label class="d-flex align-items-center">
+                            <input type="radio" class="input-wrapper" onclick="radioCheck()" name="radios" id="inputTwo" value="">
+                            <div>
+                                <p>Курьер по вашему адресу</p>
+                                <span class="input-label">Доставка 3 августа с</span>
+                            </div>
+                            <p style="margin-left: 504px;">98 ₴</p>
+                        </label>
+                        <div class="invisible" id="selectDiv2">
+                            <form>
+                                <div class="row d-flex by-address-delivery">
+                                    <div class="line col-6">
+                                        <label for="inputStreet" class="input-label">Улица</label>
+                                        <input type="text" name="street" class="input-delivery" id="inputStreet" placeholder="">
+                                        <div id="errorStreet" class="error-selector invisible">
+                                            <img src="./img/attention.png" alt="attention">
+                                        </div>
+                                    </div>
+                                    <div class="line col-4">
+                                        <label for="inputHouse" class="input-label">Дом</label>
+                                        <input type="text" name="house" class="input-delivery" id="inputHouse" placeholder="">
+                                        <div id="errorHouse" class="error-selector invisible">
+                                            <img src="./img/attention.png" alt="attention">
+                                        </div>
+                                    </div>
+                                    <div class="line col-2">
+                                        <label for="inputFlat" class="input-label">Квартира</label>
+                                        <input type="number" name="Flat" class="input-delivery" id="inputFlat" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="row d-flex by-address-delivery">
+                                    <div class="line col-6">
+                                        <label for="inputLavel" class="input-label">Этаж</label>
+                                        <input type="number" name="lavel" class="input-delivery" id="inputLavel" placeholder="">
+                                    </div>
+                                    <div class="line col-6">
+                                        <label for="selectLevel" class="input-label">Лифт</label>
+                                        <select name="level" id="selectLevel" class="input-delivery">
+                                            <option value="null" disabled="true" selected>Наличие грузового лифта</option>
+                                            <option value="none" class="level-none">Отсутствует</option>
+                                            <option value="уes" class="level-is">Присутствует</option>
+                                        </select>
+                                    </div>
+                                    <div style="margin-top: 10px">
+                                        <input type="checkbox"  name="check" id="checkbox"> Поднять на этаж
+                                    </div>
+
+                                </div>
+
+                            </form>
+                            <div class="time-table-item">
+                                <span class="input-label">Выберите удобное для вас время доставки и мы сможем обработать ваш заказ быстрее</span>
+                                <div class="data d-flex justify-content-between align-items-center text-center">
+                                    <div class="data-list">
+                                        <p>2 августа</p><br>
+                                        <button class="button active">14:00-19:00</button>
+                                    </div>
+                                    <div class="data-list">
+                                        <p>3 августа</p><br>
+                                        <button class="button">14:00-19:00</button>
+                                    </div>
+                                    <div class="data-list">
+                                        <p>4 августа</p><br>
+                                        <button class="button">14:00-19:00</button>
+                                    </div>
+                                    <div class="data-list">
+                                        <p>5 августа</p><br>
+                                        <button class="button">14:00-19:00</button>
+                                    </div>
+                                    <div class="data-list">
+                                        <p>6 августа</p><br>
+                                        <button class="button">14:00-19:00</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="radio">
+                        <label class="d-flex align-items-center">
+                            <input type="radio" class="input-wrapper" onclick="radioCheck()" name="radios" id="inputThree" value="">
+                            <div>
+                                <p>Самовывоз из Meest</p>
+                            </div>
+                            <p style="margin-left: 540px;">48 ₴</p>
+                        </label>
+                        <div class="invisible" id="selectDiv3">
+                            <select name="address" class="address">
+                                <option value="null" disabled="true" selected>Выберите подходящее отделение</option>
+                                <option value="address-list">Стадионный проезд, 5А</option>
+                                <option value="address-list">Клочковская ул., 9А</option>
+                                <option value="address-list">Героев Труда ул., 29А</option>
+                            </select>
+                            <div class="time-table d-flex justify-content-end">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.725476840877!2d36.31977531571367!3d49.960251979410764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270a51f40cb07d%3A0x3ed3259c01292800!2z0L_RgC4g0KHRgtCw0LTQuNC-0L3QvdGL0LksIDXQsCwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDkx!5e0!3m2!1sru!2sua!4v1659170784966!5m2!1sru!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="radio">
+                        <label class="d-flex align-items-center">
+                            <input type="radio" class="input-wrapper" onclick="radioCheck()" name="radios" id="inputFour" value="">
+                            <div>
+                                <p>Самовывоз из Укрпошта</p>
+                            </div>
+                            <p style="margin-left: 510px;">32 ₴</p>
+                        </label>
+                        <div  class="invisible" id="selectDiv4">
+                            <select name="address" class="address">
+                                <option value="null" disabled="true" selected>Выберите подходящее отделение</option>
+                                <option value="address-list">Стадионный проезд, 5А</option>
+                                <option value="address-list">Клочковская ул., 9А</option>
+                                <option value="address-list">Героев Труда ул., 29А</option>
+                            </select>
+                            <div class="time-table d-flex justify-content-end">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.725476840877!2d36.31977531571367!3d49.960251979410764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270a51f40cb07d%3A0x3ed3259c01292800!2z0L_RgC4g0KHRgtCw0LTQuNC-0L3QvdGL0LksIDXQsCwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDkx!5e0!3m2!1sru!2sua!4v1659170784966!5m2!1sru!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="radio">
+                        <label class="d-flex align-items-center">
+                            <input type="radio" class="input-wrapper" onclick="radioCheck()" name="radios" id="inputFive" value="">
+                            <div>
+                                <p>Самовывоз из Meest</p>
+                            </div>
+                            <p style="margin-left: 540px;">48 ₴</p>
+                        </label>
+                        <div class="invisible" id="selectDiv5">
+                            <select name="address" class="address">
+                                <option value="null" disabled="true" selected>Выберите подходящее отделение</option>
+                                <option value="address-list">Стадионный проезд, 5А</option>
+                                <option value="address-list">Клочковская ул., 9А</option>
+                                <option value="address-list">Героев Труда ул., 29А</option>
+                            </select>
+                            <div class="time-table d-flex justify-content-end">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.725476840877!2d36.31977531571367!3d49.960251979410764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270a51f40cb07d%3A0x3ed3259c01292800!2z0L_RgC4g0KHRgtCw0LTQuNC-0L3QvdGL0LksIDXQsCwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDkx!5e0!3m2!1sru!2sua!4v1659170784966!5m2!1sru!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset name="payment" class="fourth-block">
+                    <div class="checkInform">
+                        <div class="inform d-flex">
+                            <span class="span">3</span>
+                            <legend class="informTitle">Оплата</legend>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                            Оплата при получении товара
+                        </label>
+                    </div>
+                    <div class="form-check item">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            Оплатить сейчас
+                        </label>
+                    </div>
+                    <div class="form-check item">
+                        <label class="form-check-label" for="flexRadioDefault3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" >
+                            Оплатить онлайн социальной картой "Пакунок малюка"
+                        </label>
+                    </div>
+                    <div class="form-check item">
+                        <label class="form-check-label" for="flexRadioDefault4">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                            PrivatPay
+                        </label>
+                    </div>
+
+                </fieldset>
+                <fieldset name="recieverContact" class="fifth-block">
+                    <div class="checkInform">
+                        <div class="inform d-flex">
+                            <span class="span">4</span>
+                            <legend class="informTitle">Контактные данные получателя заказа</legend>
+                        </div>
+                    </div>
+                    <div class="attention">
+                        <p>Внимание! Получение заказа по паспорту. Введите фамилию, имя, отчество и мобильный номер телефона получателя заказа</p>
+                    </div>
+                    <form class="form-box">
+                        <select name="nameUser" id="nameUser" class="nameUser">
+                        </select>
+                        <div class="line-wrapper">
+                            <div class="line margin-right">
+                                <label for="inputUserSurname" class="input-label">Фамилия</label>
+                                <input type="text" name="surname" id="inputUserSurname" class="input" value="">
+                                <p id="error-5" class="error last invisible">
+                                    Введите фамилию на кириллице
+                                    <img src="./img/attention.png" alt="attention">
+                                </p>
+                            </div>
+                            <div class="line">
+                                <label for="inputUserName" class="input-label">Имя</label>
+                                <input type="text" name="name" id="inputUserName" class="input" value="">
+                                <p id="error-6" class="error last invisible">
+                                    Введите имя на кириллице
+                                    <img src="./img/attention.png" alt="attention">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="line-wrapper">
+                            <div class="line margin-right">
+                                <label for="inputPatronymic" class="input-label">Отчество</label>
+                                <input type="text" name="patronymic" id="inputPatronymic" class="input" value="">
+                                <p id="error-7" class="error last invisible">
+                                    Введите отчество на кириллице
+                                    <img src="./img/attention.png" alt="attention">
+                                </p>
+                            </div>
+                            <div class="line">
+                                <label for="inputNumber" class="input-label">Мобильный телефон</label>
+                                <input type="tel" name="phone" id="inputNumber" placeholder="+38" class="input">
+                                <p id="error-8" class="error last invisible">
+                                    Введите мобльный телефон
+                                    <img src="./img/attention.png" alt="attention">
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+        <div class="aside">
+            <div class="promo-wrapper">
+                <div class="promo d-flex justify-content-between">
+                    <p class="text">Промокод</p>
+                    <button type="button" class="promo-add" value="Click" onmousedown="viewDiv()">Добавить</button>
+                </div>
+                <div class="checkout-promo" id="checkout-promo">
+                    <input type="text" name="promo" id="promo" style="width: 100%;">
+                    <button class="checkout-btn" type="button"> Применить </button>
+                </div>
+            </div>
+            <div class="total">
+                <h4 class="total-title">Итого</h4>
+                <div class="total-row">
+                    <p class="text">1 товар на сумму</p>
+                    <p class="promo-price"><span id="price-product">709</span> ₴</p>
+                </div>
+                <div class="total-row">
+                    <p class="text">Стоимость доставки</p>
+                    <p class="promo-price"><span id="price-delivery" >192</span>₴</p>
+                </div>
+                <div class="total-row row-final-price">
+                    <p class="text">До сплати</p>
+                    <p class="promo-final-price"><span id="final-price">709</span> ₴</p>
+                </div>
+                <button type="submit" class="total-btn">Заказ подтверждаю</button>
+                <p class="total-caption"> Подтверждая заказ, я принимаю условия: </p>
+                <ul class="total-list">
+                    <li class="total-list-item"> положения о сборе и защите персональных данных </li>
+                    <li class="total-list-item"> пользовательского соглашения </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>© 2001–2022 Интернет-магазин «Розетка™» — Щоразу що треба</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

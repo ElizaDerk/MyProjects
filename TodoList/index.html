@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>To do list</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form name="form">
+            <div class="wrapper-elements">
+                <input placeholder="Фильтр" type="text" name="filter" id="myFilter">
+                <select name="select" id="select">
+                    <option value="all">По умолчанию</option>
+                    <option value="uncompleted">Сначало активные</option>
+                    <option value="completed">Сначало выполненные</option>
+                </select>
+            </div>
+            <div class="wrapper-input">
+                <input placeholder="Новая задача" type="text" name="title" id="title">
+                <button class="button" type="button" onclick="newElement()">Добавить</button>
+            </div>
+            <ul id="todoTable">
+
+
+            </ul>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

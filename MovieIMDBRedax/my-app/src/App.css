@@ -1,0 +1,153 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: grey;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    color: white;
+
+}
+
+h3{
+    color: white;
+}
+.div-form{
+    width: 500px;
+    margin: 30px auto;
+}
+.input-search{
+    color: black;
+}
+
+h1 {
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(79, 98, 148);
+}
+
+.form {
+    max-width: 400px;
+    margin: 100px auto;
+    color: black;
+}
+
+.error {
+    color: red;
+}
+
+.error::before {
+    display: inline;
+    content: "⚠ ";
+}
+
+.input-sign {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background: #ec5990;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+input[type="submit"]:hover {
+    background: #bf1650;
+}
+
+input[type="submit"]:active {
+    transition: 0.3s all;
+    transform: translateY(3px);
+    border: 1px solid transparent;
+    opacity: 0.8;
+}
+
+.input-sign:disabled {
+    opacity: 0.4;
+}
+
+
+.log-btn {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.browse{
+    margin: 30px 50px;
+}
+
+.input-search{
+    width: 50%;
+    padding: 10px 15px;
+}
+
+.list-ul{
+    padding: 0;
+}
+.list-li{
+    list-style-type: none;
+    padding: 10px 0;
+    width: 50%;
+    border: 1px solid;
+    box-shadow: 6px 7px 5px 0px rgba(115,102,102,0.75);
+    -webkit-box-shadow: 6px 7px 5px 0px rgba(115,102,102,0.75);
+    -moz-box-shadow: 6px 7px 5px 0px rgba(115,102,102,0.75);
+
+}
+
+.out-btn{
+    float: right;
+    padding: 10px 15px;
+    background: #ec5990;
+    cursor: pointer;
+}
+.out-btn:hover {
+    background: #bf1650;
+}
+
+.list-li:hover{
+    background: #e5bb8d;
+}
+
+.film-list{
+    width: 300px;
+    text-align: center;
+    margin: 10px 15px;
+}
+
+.title-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span{
+    color: red;
+    font-style: italic;
+}
+
