@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fd70155-479e-407a-8008-fa8091acf245" name="Changes" comment="add" />
+    <list default="true" id="1fd70155-479e-407a-8008-fa8091acf245" name="Changes" comment="add">
+      <change afterPath="$PROJECT_DIR$/antd-demo/src/img/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/antd-demo/src/img/login.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Invest/my-app/src/components/LoanList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Invest/my-app/src/components/LoanList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/antd-demo/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/antd-demo/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/antd-demo/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/antd-demo/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/antd-demo/src/components/LogOutBtn.js" beforeDir="false" afterPath="$PROJECT_DIR$/antd-demo/src/components/LogOutBtn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/antd-demo/src/pages/Browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/antd-demo/src/pages/Browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/antd-demo/src/pages/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/antd-demo/src/pages/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/antd-demo/src/pages/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/antd-demo/src/pages/Title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieIMDBRedax/my-app/src/pages/Browse.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MovieIMDBRedax/my-app/src/pages/Browse.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,19 +29,22 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Ggk578ZZWu3PEJU93FDHPEPVme" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/elizavetaderkachova/Documents/Hillel/PRO/HW /HW18",
+    "last_opened_file_path": "/Users/elizavetaderkachova/Documents/CV/My Best Projects/MovieIMDB",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,6 +63,8 @@
       <option name="presentableId" value="Default" />
       <updated>1666817428120</updated>
       <workItem from="1666817429276" duration="1799000" />
+      <workItem from="1671193044534" duration="4150000" />
+      <workItem from="1671448402890" duration="12057000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1666819133278</created>
@@ -74,6 +91,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add" />
     <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>

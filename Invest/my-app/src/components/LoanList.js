@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import ReactModal from "react-modal";
 import exit from './exit.png'
 
@@ -45,6 +45,18 @@ export default function LoanList() {
         setshowpopup(!showpopup);
     };
 
+    const inputRef = useRef();
+    useEffect(()=>{
+        console.log(inputRef)
+    }, [])
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        // setInputs(inputRef.current.value)
+        // console.log('form submitted ✅, value is:', inputRef.current.value);
+        console.log(inputRef.current.value);
+    }
+
     return (
         <div>
             {data.map((item) => {
@@ -89,14 +101,14 @@ export default function LoanList() {
                                         </h2>
                                         <p className='title-name'>{item.title}</p>
                                         <p className='text-modal'>Amount available: ${item.available}</p>
-                                        {/*<p>Loan ends in: {item.term_remaining}</p>*/}
                                         <p>Loan ends in:{item.term_remaining}
                                         </p>
                                         <h3 className="title-modal">Investment amount</h3>
-                                        <form>
-                                            <input key={item.id} name={item.id} className="input-invest" type="number"/>
+                                        <form onSubmit={handleSubmit}>
+                                            <input key={item.id} name="number" className="input-invest" type="number" ref={inputRef} />
                                             <button className="main-btn">Invest</button>
                                         </form>
+
                                 </>
                             </ReactModal>
                         );
@@ -105,7 +117,7 @@ export default function LoanList() {
             </div>
             <div style={{display: 'flex', alignItems:"center", justifyContent:"space-between", margin: "0 64px", paddingTop: '60px' }}>
                 <h2>Total amount available for investment: </h2>
-                <span className='item-text'></span>
+                <span className='item-text' id="total">$</span>
             </div>
         </div>
     );

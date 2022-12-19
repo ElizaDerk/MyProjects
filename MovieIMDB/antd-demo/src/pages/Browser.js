@@ -24,7 +24,7 @@ const Browser =() => {
 
     useEffect(() => {
         fetchFilms({
-            s: 'Avengers Endgame', r: 'json', page: '1'
+            s: 'Harry Potter', r: 'json', page: '1'
         }, setBrowseFilms)
     }, [])
 
@@ -39,22 +39,21 @@ const Browser =() => {
     const changeHandler = (event) => {
         setInputFilm(event.target.value);
     }
-
     const debouncedChangeHandler = useMemo(
-        () => debounce(changeHandler, 100)
-        , []);
+        () => debounce(changeHandler, 10), []);
 
     const navigate = useNavigate()
     const onFilmClick = (id) => {
         navigate(`/title/${id}`)
     }
 
+
     return browseFilms.length === 0 ?
         <div>Loading</div>
         :
         (
             <div className="browse">
-                <div>
+                <div className="input-wrapper">
                     <LogOutBtn />
                     <input onChange={debouncedChangeHandler} placeholder="Search Films" className="input-search"/>
                     <ul className="list-ul">
@@ -66,11 +65,11 @@ const Browser =() => {
                     </ul>
 
                 </div>
-                <div style={{display: 'flex', justifyContent: 'center', flexWrap: "wrap"}}>
+                <div style={{display: 'flex', flexWrap: "wrap"}}>
                     {browseFilms.map(film => {
                         return(
                             <div className="film-list" onClick={()=> { onFilmClick(film.imdbID)}} key={film.imdbID}>
-                                <img src={film.Poster} alt={film.Title}/>
+                                <img className="film-poster" src={film.Poster} alt={film.Title}/>
                                 <h3>{film.Title}</h3>
                             </div>
                         )

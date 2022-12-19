@@ -24,19 +24,24 @@ const Title = () => {
     }, [id]);
 
     return(
-        <div>
+        <div className="card-background">
             {
                 film ?
                     <div className="title-content">
                         <LogOutBtn />
                         <div className="title-item">
                             <img src={film.Poster} alt={film.Title}/>
-                            <div>
-                                <h3>{film.Title}</h3>
+                            <div style={{marginLeft: '45px'}}>
+                                <h3 className="title">{film.Title}</h3>
                                 <p><span>Run Time:</span> {film.Runtime}  </p>
                                 <p><span>Film genre:</span> {film.Genre}</p>
                                 <p><span>Film director:</span> {film.Director}</p>
-                                <p><span>Film writer:</span> {film.Writer}</p>
+                                <p><span>Released:</span> {film.Released}</p>
+                                <p><span>Actors:</span> {film.Actors}</p>
+                                <p><span>Plot:</span> {film.Plot}</p>
+                                <p><span>Language:</span> {film.Language}</p>
+                                <p><span>Country:</span> {film.Country}</p>
+
                             </div>
 
                         </div>

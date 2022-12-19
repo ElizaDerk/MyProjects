@@ -15,7 +15,7 @@ const Browse = () => {
 
     useEffect(() => {
         dispatch(fetchBrowseFilms({
-                s: 'Avengers Endgame', r: 'json', page: '1'
+            s: 'Harry Potter', r: 'json', page: '1'
             })
         )
     }, [dispatch])
