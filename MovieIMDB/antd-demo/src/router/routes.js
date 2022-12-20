@@ -15,7 +15,8 @@ const routes = [
     },
     {
         name: 'SingIn',
-        path: "/sing-in",
+        // path: "/sing-in",
+        path: "/",
         element: <SingIn />,
     },
 ];

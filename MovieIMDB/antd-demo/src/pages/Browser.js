@@ -55,15 +55,16 @@ const Browser =() => {
             <div className="browse">
                 <div className="input-wrapper">
                     <LogOutBtn />
-                    <input onChange={debouncedChangeHandler} placeholder="Search Films" className="input-search"/>
-                    <ul className="list-ul">
-                        {searchList.map(searchFilm =>
-                            <li className="list-li" onClick={() => { onFilmClick(searchFilm.imdbID)}} key={`list-${searchFilm.imdbID}`}>
-                                <img src={searchFilm.Poster} alt={searchFilm.Title} style={{ width: '30px', height: "30px" }}/>
-                                {searchFilm.Title}
-                            </li>)}
-                    </ul>
-
+                    <div>
+                        <input onChange={debouncedChangeHandler} placeholder="Search Films" className="input-search"/>
+                        <ul className="list-ul">
+                            {searchList.map(searchFilm =>
+                                <li className="list-li" onClick={() => { onFilmClick(searchFilm.imdbID)}} key={`list-${searchFilm.imdbID}`}>
+                                    <img src={searchFilm.Poster} alt={searchFilm.Title} style={{ width: '30px', height: "30px" }}/>
+                                    {searchFilm.Title}
+                                </li>)}
+                        </ul>
+                    </div>
                 </div>
                 <div style={{display: 'flex', flexWrap: "wrap"}}>
                     {browseFilms.map(film => {

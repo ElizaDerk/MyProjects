@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fd70155-479e-407a-8008-fa8091acf245" name="Changes" comment="add">
-      <change afterPath="$PROJECT_DIR$/antd-demo/src/img/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/antd-demo/src/img/login.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Invest/my-app/src/components/LoanList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Invest/my-app/src/components/LoanList.js" afterDir="false" />
+    <list default="true" id="1fd70155-479e-407a-8008-fa8091acf245" name="Changes" comment="add styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/antd-demo/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/antd-demo/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/antd-demo/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/antd-demo/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/antd-demo/src/components/LogOutBtn.js" beforeDir="false" afterPath="$PROJECT_DIR$/antd-demo/src/components/LogOutBtn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/antd-demo/src/pages/Browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/antd-demo/src/pages/Browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/antd-demo/src/pages/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/antd-demo/src/pages/SignIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/antd-demo/src/pages/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/antd-demo/src/pages/Title.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MovieIMDBRedax/my-app/src/pages/Browse.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MovieIMDBRedax/my-app/src/pages/Browse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/antd-demo/src/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/antd-demo/src/router/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,24 +28,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/elizavetaderkachova/Documents/CV/My Best Projects/MovieIMDB",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/elizavetaderkachova/Documents/CV/My Best Projects/MovieIMDB&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,7 +56,8 @@
       <updated>1666817428120</updated>
       <workItem from="1666817429276" duration="1799000" />
       <workItem from="1671193044534" duration="4150000" />
-      <workItem from="1671448402890" duration="12057000" />
+      <workItem from="1671448402890" duration="12571000" />
+      <workItem from="1671479879933" duration="251000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1666819133278</created>
@@ -73,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666819133278</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add styles">
+      <created>1671479162956</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671479162956</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +93,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add" />
-    <option name="LAST_COMMIT_MESSAGE" value="add" />
+    <MESSAGE value="add styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="add styles" />
   </component>
 </project>
