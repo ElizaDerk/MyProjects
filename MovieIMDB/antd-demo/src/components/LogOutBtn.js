@@ -6,8 +6,10 @@ const LogOutBtn = () => {
 
     const logout = () => {
         localStorage.setItem('logged-in', false);
-        navigate('/sing-in')
+        // navigate('/sing-in')
+        navigate('/')
     }
+
 
     return(
         <div>
